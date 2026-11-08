@@ -1,0 +1,27 @@
+# Configuración local y credenciales
+.env
+.env.*
+!.env.example
+
+# Python, si se utiliza posteriormente
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Archivos locales del sistema y editores
+.DS_Store
+Thumbs.db
+~$*
+
+# Datos y respaldos locales: no subir sin revisión previa
+data/raw/
+*.bak
+*.dump
+*.mdf
+*.ldf
+
+# Archivos temporales
+tmp/
+*.log
