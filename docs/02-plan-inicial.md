@@ -45,6 +45,8 @@ Este archivo sirve para preparar las tareas. No sustituye el tablero visual comp
 
 Enviar la consulta preparada en [requisitos](01-requisitos.md#primera-consulta-sugerida-al-profesor) y confirmar integrantes. Mientras llega la respuesta, puede acordar el remoto, el tablero y los roles.
 
+Registrar la respuesta y la comprobación de acceso en la [ficha de recepción de la base](04-ficha-fuente.md). T06 y T07 siguen pendientes hasta contar con esa evidencia.
+
 ## Rutina semanal
 
 1. Planificación: acordar tareas, responsables y un incremento alcanzable para la semana.

@@ -21,6 +21,7 @@ La carpeta contiene el enunciado y la documentación inicial. Todavía no se ha 
 - [Requisitos](docs/01-requisitos.md): alcance, entregables, criterios de aceptación y preguntas abiertas.
 - [Plan inicial](docs/02-plan-inicial.md): tareas de la primera semana y seguimiento.
 - [Registro de avances](docs/03-registro-avances.md): evidencia resumida del trabajo realizado.
+- [Recepción de la base de datos](docs/04-ficha-fuente.md): ficha y pasos para confirmar la asignación y verificar el acceso.
 
 Los documentos Markdown son material de trabajo para preparar el documento final en APA 7; no sustituyen esa entrega.
 

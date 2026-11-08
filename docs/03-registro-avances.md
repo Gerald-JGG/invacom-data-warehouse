@@ -38,3 +38,11 @@ git show --stat <identificador-del-commit>
 ```
 
 Los commits iniciales pertenecen a una única jornada. Los avances de semanas posteriores se registrarán cuando ocurran.
+
+## 7 de noviembre de 2026 — Preparación para recibir la fuente
+
+- Se comprobó que los tres commits iniciales existen y que el repositorio estaba limpio antes de continuar.
+- Se agregó una ficha para registrar la asignación, la herramienta ETL, la recepción y la apertura real de la fuente.
+- Se enlazó la ficha desde la guía y el plan inicial.
+- Se mantuvieron T06 y T07 pendientes: aún no hay evidencia de recepción ni de apertura de la base.
+- Se verificaron los enlaces locales y las diferencias de Git antes del commit.
