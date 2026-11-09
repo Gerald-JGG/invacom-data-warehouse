@@ -46,3 +46,13 @@ Los commits iniciales pertenecen a una única jornada. Los avances de semanas po
 - Se enlazó la ficha desde la guía y el plan inicial.
 - Se mantuvieron T06 y T07 pendientes: aún no hay evidencia de recepción ni de apertura de la base.
 - Se verificaron los enlaces locales y las diferencias de Git antes del commit.
+
+## 8 de noviembre de 2026 — Modelo dimensional de ventas
+
+- El usuario confirmó Chinook como fuente asignada y Google Cloud Data Fusion como herramienta ETL.
+- Se leyeron los 11 CSV locales y se comprobaron las relaciones necesarias para la estrella de ventas.
+- Se conciliaron los totales de las 412 facturas con sus 2.240 detalles usando aritmética decimal; no hubo diferencias.
+- Se preparó una propuesta con `FactVenta`, `DimFecha`, `DimCliente` y `DimCancion`, y se documentaron la granularidad, las claves, las medidas y el mapeo fuente-destino.
+- Se generaron un diagrama editable `.drawio`, un SVG y un PNG; se inspeccionó visualmente la imagen y se verificó la estructura XML del archivo editable.
+- Se actualizaron el README, las confirmaciones de requisitos y la ficha de recepción. La propuesta aún requiere revisión del equipo; el DW, el ETL y Excel no se han implementado.
+- Por instrucción del usuario, este avance se reúne en un único commit: documentación, roles, propuesta del modelo, diagrama, CSV de Chinook y enunciados organizados en `docs/proyectos/`. Se mantienen los originales y el diagrama sin modificaciones. El segundo enunciado queda pendiente de análisis.

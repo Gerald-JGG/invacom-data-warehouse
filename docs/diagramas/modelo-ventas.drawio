@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="ventas-chinook" name="Estrella de ventas">
+    <mxGraphModel dx="1480" dy="1040" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1480" pageHeight="1040" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="CHINOOK  /  Data Warehouse de ventas" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=30;fontColor=#0f172a;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="1380" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Modelo estrella propuesto · 08 noviembre 2026 · pendiente de revisión del equipo" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="79" width="1380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="grain" value="GRANULARIDAD: una fila de FactVenta por InvoiceLineId de la fuente" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=21;fontColor=#0f766e;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="119" width="1380" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-fecha" parent="1" edge="1" source="fecha" target="venta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;startArrow=none;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=1;exitY=0.462406;entryX=0;entryY=0.473373;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="465" y="333" />
+              <mxPoint x="465" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-fecha-0" value="1" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=19;fontColor=#475569;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="306" width="25" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="card-fecha-1" value="N" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=19;fontColor=#475569;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="501" y="431" width="25" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cliente" parent="1" edge="1" source="cliente" target="venta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;startArrow=none;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=1;exitY=0.462406;entryX=0;entryY=0.798817;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="465" y="683" />
+              <mxPoint x="465" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-cliente-0" value="1" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=19;fontColor=#475569;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="656" width="25" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="card-cliente-1" value="N" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=19;fontColor=#475569;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="501" y="541" width="25" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-cancion" parent="1" edge="1" source="cancion" target="venta" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;startArrow=none;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0;exitY=0.470414;entryX=1;entryY=0.582840;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1005" y="369" />
+              <mxPoint x="1005" y="497" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card-cancion-0" value="1" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=19;fontColor=#475569;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="341" width="25" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="card-cancion-1" value="N" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=19;fontColor=#475569;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="956" y="468" width="25" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha" value="DimFecha" style="swimlane;html=0;startSize=50;horizontal=1;collapsible=0;rounded=0;fillColor=#0f766e;swimlaneFillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#ffffff;fontFamily=Arial;fontSize=23;fontStyle=1;align=left;spacingLeft=18;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="355" height="266" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha-field-0" value="PK   FechaKey : INTEGER (AAAAMMDD)" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="fecha">
+          <mxGeometry x="0" y="50" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha-field-1" value="      Fecha : DATE" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="fecha">
+          <mxGeometry x="0" y="86" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha-field-2" value="      Anio : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="fecha">
+          <mxGeometry x="0" y="122" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha-field-3" value="      Trimestre : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="fecha">
+          <mxGeometry x="0" y="158" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha-field-4" value="      Mes : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="fecha">
+          <mxGeometry x="0" y="194" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="fecha-field-5" value="      Dia : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="fecha">
+          <mxGeometry x="0" y="230" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" value="DimCliente" style="swimlane;html=0;startSize=50;horizontal=1;collapsible=0;rounded=0;fillColor=#0f766e;swimlaneFillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#ffffff;fontFamily=Arial;fontSize=23;fontStyle=1;align=left;spacingLeft=18;" vertex="1" parent="1">
+          <mxGeometry x="50" y="560" width="355" height="266" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-field-0" value="PK   ClienteKey : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cliente">
+          <mxGeometry x="0" y="50" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-field-1" value="NK   CustomerId : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cliente">
+          <mxGeometry x="0" y="86" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-field-2" value="      NombreCompleto : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cliente">
+          <mxGeometry x="0" y="122" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-field-3" value="      Pais : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cliente">
+          <mxGeometry x="0" y="158" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-field-4" value="      Estado : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cliente">
+          <mxGeometry x="0" y="194" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente-field-5" value="      Ciudad : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cliente">
+          <mxGeometry x="0" y="230" width="355" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta" value="FactVenta" style="swimlane;html=0;startSize=50;horizontal=1;collapsible=0;rounded=0;fillColor=#1e3a8a;swimlaneFillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#ffffff;fontFamily=Arial;fontSize=23;fontStyle=1;align=left;spacingLeft=18;" vertex="1" parent="1">
+          <mxGeometry x="535" y="300" width="405" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-0" value="PK/DD  InvoiceLineId : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="50" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-1" value="DD     InvoiceId : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="86" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-2" value="FK     FechaKey : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="122" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-3" value="FK     ClienteKey : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="158" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-4" value="FK     CancionKey : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="194" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-5" value="       Cantidad : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="230" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-6" value="       PrecioUnitario : DECIMAL(12,2)" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="266" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="venta-field-7" value="       ImporteVenta : DECIMAL(14,2)" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="venta">
+          <mxGeometry x="0" y="302" width="405" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion" value="DimCancion" style="swimlane;html=0;startSize=50;horizontal=1;collapsible=0;rounded=0;fillColor=#0f766e;swimlaneFillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#ffffff;fontFamily=Arial;fontSize=23;fontStyle=1;align=left;spacingLeft=18;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="210" width="360" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-0" value="PK   CancionKey : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="50" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-1" value="NK   TrackId : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="86" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-2" value="      NombreCancion : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="122" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-3" value="      Album : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="158" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-4" value="      Artista : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="194" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-5" value="      Genero : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="230" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-6" value="      TipoMedio : TEXT" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="266" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="cancion-field-7" value="      DuracionMs : INTEGER" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacingLeft=14;fontFamily=Consolas;fontSize=16;fontColor=#1e293b;" vertex="1" parent="cancion">
+          <mxGeometry x="0" y="302" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="formula" value="ImporteVenta = InvoiceLine.Quantity × InvoiceLine.UnitPrice" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=20;fontColor=#1e3a8a;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="680" width="880" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="price" value="Usar el precio vendido del detalle, no el precio actual de Track." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="716" width="880" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="PK: clave primaria   FK: clave foránea   NK: clave de origen   DD: dimensión degenerada" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="855" width="1380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="1 → N: una dimensión puede aparecer en muchos detalles; cada detalle apunta a una fila de cada dimensión." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="893" width="1380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="No sumar Invoice.Total por detalle. País = ubicación del cliente; no necesariamente país de facturación." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="931" width="1380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="note3" value="Diseño lógico: tipos SQL y generación de claves se ajustarán al motor del DW. Dimensiones con actualización tipo 1." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontFamily=Arial;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="969" width="1380" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

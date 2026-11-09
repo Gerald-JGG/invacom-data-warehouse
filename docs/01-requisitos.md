@@ -2,7 +2,7 @@
 
 Fecha: 7 de noviembre de 2026.
 
-Fuente: `Proyecto # 1 Mineria de Datos.pdf`, páginas 1–7. Las propuestas de este documento se identifican como tales; no representan acuerdos con el profesor ni necesidades verificadas de usuarios.
+Fuente: `docs/proyectos/Proyecto # 1 Mineria de Datos.pdf`, páginas 1–7. Las propuestas de este documento se identifican como tales; no representan acuerdos con el profesor ni necesidades verificadas de usuarios.
 
 ## Problema indicado en el enunciado
 
@@ -65,8 +65,8 @@ El enunciado establece grupos de máximo cuatro personas y evaluación del aport
 
 | ID | Pregunta | Motivo | Estado |
 | --- | --- | --- | --- |
-| P01 | ¿Cuál es la base de datos asignada y cómo se obtiene? | Es necesaria para analizar la fuente y diseñar el modelo | Pendiente |
-| P02 | ¿Qué herramienta ETL corresponde al grupo? | La página 4 indica elección; la rúbrica de la página 6 menciona asignación por sorteo | Pendiente |
+| P01 | ¿Cuál es la base de datos asignada y cómo se obtiene? | Es necesaria para analizar la fuente y diseñar el modelo | Resuelto el 08/11/2026: el usuario confirmó Chinook y colocó 11 CSV en `chinook_digital_store/` |
+| P02 | ¿Qué herramienta ETL corresponde al grupo? | La página 4 indica elección; la rúbrica de la página 6 menciona asignación por sorteo | Resuelto: el usuario confirmó Google Cloud Data Fusion como tema asignado por el profesor |
 | P03 | ¿Qué motor y versión usa la fuente? ¿Hay restricciones para el motor del DW? | Permite preparar conexiones e infraestructura compatibles | Pendiente |
 | P04 | ¿Quiénes integran el equipo y quién será coordinador y Scrum Master? | Permite asignar responsabilidades reales | Pendiente |
 | P05 | ¿Cuál es la fecha de entrega y cuántas revisiones semanales habrá? | Permite establecer el calendario de sprints | Pendiente |

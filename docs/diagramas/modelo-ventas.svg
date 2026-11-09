@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1040" viewBox="0 0 1480 1040">
+  <title>Chinook: modelo dimensional de ventas</title>
+  <desc>FactVenta se relaciona muchos a uno con DimFecha, DimCliente y DimCancion. Una fila representa un detalle de factura.</desc>
+  <rect x="0" y="0" width="1480" height="1040" fill="#ffffff" />
+  <text x="50" y="64" fill="#0f172a" font-family="Arial, sans-serif" font-size="30" font-weight="bold">CHINOOK  /  Data Warehouse de ventas</text>
+  <text x="50" y="101" fill="#334155" font-family="Arial, sans-serif" font-size="18" font-weight="normal">Modelo estrella propuesto · 08 noviembre 2026 · pendiente de revisión del equipo</text>
+  <text x="50" y="144" fill="#0f766e" font-family="Arial, sans-serif" font-size="21" font-weight="bold">GRANULARIDAD: una fila de FactVenta por InvoiceLineId de la fuente</text>
+  <polyline points="405,333 465,333 465,460 535,460" fill="none" stroke="#64748b" stroke-width="2" />
+  <text x="420" y="329" fill="#475569" font-family="Arial, sans-serif" font-size="19" font-weight="bold">1</text>
+  <text x="501" y="454" fill="#475569" font-family="Arial, sans-serif" font-size="19" font-weight="bold">N</text>
+  <polyline points="405,683 465,683 465,570 535,570" fill="none" stroke="#64748b" stroke-width="2" />
+  <text x="420" y="679" fill="#475569" font-family="Arial, sans-serif" font-size="19" font-weight="bold">1</text>
+  <text x="501" y="564" fill="#475569" font-family="Arial, sans-serif" font-size="19" font-weight="bold">N</text>
+  <polyline points="1070,369 1005,369 1005,497 940,497" fill="none" stroke="#64748b" stroke-width="2" />
+  <text x="1040" y="364" fill="#475569" font-family="Arial, sans-serif" font-size="19" font-weight="bold">1</text>
+  <text x="956" y="491" fill="#475569" font-family="Arial, sans-serif" font-size="19" font-weight="bold">N</text>
+  <rect x="50" y="210" width="355" height="266" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <rect x="50" y="210" width="355" height="50" fill="#0f766e" />
+  <text x="68" y="243" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="bold">DimFecha</text>
+  <text x="64" y="284" fill="#1e293b" font-family="Consolas, monospace" font-size="16">PK   FechaKey : INTEGER (AAAAMMDD)</text>
+  <text x="64" y="320" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Fecha : DATE</text>
+  <text x="64" y="356" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Anio : INTEGER</text>
+  <text x="64" y="392" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Trimestre : INTEGER</text>
+  <text x="64" y="428" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Mes : INTEGER</text>
+  <text x="64" y="464" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Dia : INTEGER</text>
+  <rect x="50" y="560" width="355" height="266" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <rect x="50" y="560" width="355" height="50" fill="#0f766e" />
+  <text x="68" y="593" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="bold">DimCliente</text>
+  <text x="64" y="634" fill="#1e293b" font-family="Consolas, monospace" font-size="16">PK   ClienteKey : INTEGER</text>
+  <text x="64" y="670" fill="#1e293b" font-family="Consolas, monospace" font-size="16">NK   CustomerId : INTEGER</text>
+  <text x="64" y="706" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      NombreCompleto : TEXT</text>
+  <text x="64" y="742" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Pais : TEXT</text>
+  <text x="64" y="778" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Estado : TEXT</text>
+  <text x="64" y="814" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Ciudad : TEXT</text>
+  <rect x="535" y="300" width="405" height="338" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <rect x="535" y="300" width="405" height="50" fill="#1e3a8a" />
+  <text x="553" y="333" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="bold">FactVenta</text>
+  <text x="549" y="374" fill="#1e293b" font-family="Consolas, monospace" font-size="16">PK/DD  InvoiceLineId : INTEGER</text>
+  <text x="549" y="410" fill="#1e293b" font-family="Consolas, monospace" font-size="16">DD     InvoiceId : INTEGER</text>
+  <text x="549" y="446" fill="#1e293b" font-family="Consolas, monospace" font-size="16">FK     FechaKey : INTEGER</text>
+  <text x="549" y="482" fill="#1e293b" font-family="Consolas, monospace" font-size="16">FK     ClienteKey : INTEGER</text>
+  <text x="549" y="518" fill="#1e293b" font-family="Consolas, monospace" font-size="16">FK     CancionKey : INTEGER</text>
+  <text x="549" y="554" fill="#1e293b" font-family="Consolas, monospace" font-size="16">       Cantidad : INTEGER</text>
+  <text x="549" y="590" fill="#1e293b" font-family="Consolas, monospace" font-size="16">       PrecioUnitario : DECIMAL(12,2)</text>
+  <text x="549" y="626" fill="#1e293b" font-family="Consolas, monospace" font-size="16">       ImporteVenta : DECIMAL(14,2)</text>
+  <rect x="1070" y="210" width="360" height="338" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <rect x="1070" y="210" width="360" height="50" fill="#0f766e" />
+  <text x="1088" y="243" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="bold">DimCancion</text>
+  <text x="1084" y="284" fill="#1e293b" font-family="Consolas, monospace" font-size="16">PK   CancionKey : INTEGER</text>
+  <text x="1084" y="320" fill="#1e293b" font-family="Consolas, monospace" font-size="16">NK   TrackId : INTEGER</text>
+  <text x="1084" y="356" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      NombreCancion : TEXT</text>
+  <text x="1084" y="392" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Album : TEXT</text>
+  <text x="1084" y="428" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Artista : TEXT</text>
+  <text x="1084" y="464" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      Genero : TEXT</text>
+  <text x="1084" y="500" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      TipoMedio : TEXT</text>
+  <text x="1084" y="536" fill="#1e293b" font-family="Consolas, monospace" font-size="16">      DuracionMs : INTEGER</text>
+  <text x="535" y="704" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="20" font-weight="bold">ImporteVenta = InvoiceLine.Quantity × InvoiceLine.UnitPrice</text>
+  <text x="535" y="738" fill="#334155" font-family="Arial, sans-serif" font-size="18" font-weight="normal">Usar el precio vendido del detalle, no el precio actual de Track.</text>
+  <text x="50" y="877" fill="#334155" font-family="Arial, sans-serif" font-size="18" font-weight="normal">PK: clave primaria   FK: clave foránea   NK: clave de origen   DD: dimensión degenerada</text>
+  <text x="50" y="915" fill="#334155" font-family="Arial, sans-serif" font-size="18" font-weight="normal">1 → N: una dimensión puede aparecer en muchos detalles; cada detalle apunta a una fila de cada dimensión.</text>
+  <text x="50" y="953" fill="#334155" font-family="Arial, sans-serif" font-size="18" font-weight="normal">No sumar Invoice.Total por detalle. País = ubicación del cliente; no necesariamente país de facturación.</text>
+  <text x="50" y="991" fill="#334155" font-family="Arial, sans-serif" font-size="18" font-weight="normal">Diseño lógico: tipos SQL y generación de claves se ajustarán al motor del DW. Dimensiones con actualización tipo 1.</text>
+</svg>
