@@ -8,7 +8,7 @@ Fuente: `docs/proyectos/Proyecto # 1 Mineria de Datos.pdf`, páginas 1–7. Las 
 
 Invacom Inc S.A. necesita implementar un Data Warehouse. El equipo debe investigar los fundamentos de ETL y DW y aplicarlos a una base de datos que se proporcionará para el ejercicio.
 
-El dominio de la fuente, su estructura y los problemas concretos de los usuarios aún no se conocen. Por eso todavía no se fijan indicadores, tablas de hechos ni dimensiones.
+En la definición inicial aún no se conocía la fuente. Actualización del 09/11/2026: se recibió Chinook, se propuso una estrella de ventas y se comprobó la primera carga de clientes. Los problemas concretos de usuarios y la aprobación de objetivos de negocio siguen pendientes; ver [modelo](05-modelo-dimensional.md) y [resultados](08-etl-dimcliente.md).
 
 ## Objetivo general propuesto
 
@@ -66,10 +66,10 @@ El enunciado establece grupos de máximo cuatro personas y evaluación del aport
 | ID | Pregunta | Motivo | Estado |
 | --- | --- | --- | --- |
 | P01 | ¿Cuál es la base de datos asignada y cómo se obtiene? | Es necesaria para analizar la fuente y diseñar el modelo | Resuelto el 08/11/2026: el usuario confirmó Chinook y colocó 11 CSV en `chinook_digital_store/` |
-| P02 | ¿Qué herramienta ETL corresponde al grupo? | La página 4 indica elección; la rúbrica de la página 6 menciona asignación por sorteo | Resuelto: el usuario confirmó Google Cloud Data Fusion como tema asignado por el profesor |
-| P03 | ¿Qué motor y versión usa la fuente? ¿Hay restricciones para el motor del DW? | Permite preparar conexiones e infraestructura compatibles | Pendiente |
-| P04 | ¿Quiénes integran el equipo y quién será coordinador y Scrum Master? | Permite asignar responsabilidades reales | Pendiente |
-| P05 | ¿Cuál es la fecha de entrega y cuántas revisiones semanales habrá? | Permite establecer el calendario de sprints | Pendiente |
+| P02 | ¿Qué herramienta ETL corresponde al grupo? | La página 4 indica elección; la rúbrica de la página 6 menciona asignación por sorteo | Data Fusion fue la asignación inicial. El usuario comunicó autorización para AWS; se implementó la primera carga con Glue. Falta conservar la confirmación escrita del profesor |
+| P03 | ¿Qué motor y versión usa la fuente? ¿Hay restricciones para el motor del DW? | Permite preparar conexiones e infraestructura compatibles | Fuente entregada en CSV; destino implementado en RDS MySQL 8.4.11. No se documentaron restricciones adicionales del profesor |
+| P04 | ¿Quiénes integran el equipo y quién será coordinador y Scrum Master? | Permite asignar responsabilidades reales | Cinco integrantes y roles registrados en el plan; Gerald coordina y Jose Andres es Scrum Master. Falta documentar confirmación del profesor y autorización del tamaño del grupo |
+| P05 | ¿Cuál es la fecha de entrega y cuántas revisiones semanales habrá? | Permite establecer el calendario de sprints | El usuario indicó jueves como último día; corresponde al 12/11/2026 en esta semana. Horario y revisiones oficiales por confirmar |
 | P06 | ¿Qué necesidades de análisis debe priorizar Invacom? | Evita inventar requisitos de negocio | Pendiente |
 
 ## Primera consulta sugerida al profesor

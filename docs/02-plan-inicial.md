@@ -17,7 +17,7 @@ Asignación registrada el 8 de noviembre de 2026 por indicación de Gerald. Coor
 | Gerald Josue Gonzalez Granados | Coordinador del equipo | Centralizar consultas con el profesor, dar seguimiento a los entregables y coordinar la integración final |
 | Jose Andres Miranda Arias | Scrum Master | Facilitar la planificación y revisión, mantener el tablero actualizado con el equipo y registrar bloqueos y resultados del sprint |
 | Jose Felipe Carrera Araya | Datos y modelado (provisional) | Analizar Chinook, documentar calidad de datos y preparar el modelo dimensional y los scripts del DW |
-| Elias Josue Salas Mendez | ETL y Google Cloud (provisional) | Preparar acceso y conexiones de Data Fusion, implementar pipelines y coordinar validaciones de carga |
+| Elias Josue Salas Mendez | ETL y nube (provisional) | Preparar acceso y conexiones de AWS Glue, implementar pipelines y coordinar validaciones de carga; Data Fusion fue la herramienta inicial |
 | Rachel Barquero Varela | Informes y documentación (provisional) | Conectar Excel al DW, preparar tablas dinámicas e integrar el documento APA 7 y la presentación |
 
 Cada responsable coordina su frente con apoyo y revisión de otro integrante. Todos deben aportar técnicamente, registrar sus propios commits y comprender la solución. Estos roles no acreditan tareas realizadas ni sustituyen la asignación concreta de tareas en el sprint.
@@ -31,7 +31,7 @@ El enunciado indica un máximo de cuatro integrantes. Se registra la composició
 | Scrum Master | Jose Andres Miranda Arias, designado por el usuario; puede rotar en sprints posteriores |
 | Product Owner | Profesor, según el enunciado |
 | Repositorio remoto | https://github.com/Gerald-JGG/invacom-data-warehouse |
-| Tablero Kanban compartido | Pendiente |
+| Tablero Kanban compartido | GitHub Project Invacom Data Warehouse mostrado en capturas; URL y acceso del equipo por documentar |
 | Día de planificación y revisión | Por acordar |
 | Inicio y cierre del sprint | Por acordar |
 
@@ -45,8 +45,8 @@ Las prioridades y criterios de cierre son propuestas. Los responsables se asigna
 | T02 | Alta | Registrar requisitos y dudas del enunciado | Ninguna | Requisitos y pendientes documentados con referencia a la fuente | Hecho |
 | T03 | Alta | Confirmar integrantes y roles | Respuesta del equipo y profesor | Integrantes, coordinador y Scrum Master registrados | En proceso: integrantes y distribución registrados; falta confirmar ante el profesor y revisar los frentes provisionales con el equipo |
 | T04 | Alta | Crear remoto y compartir acceso al equipo | Cuenta y espacio acordados | Enlace registrado y acceso de integrantes comprobado | En proceso: remoto creado y conectado; acceso del equipo por comprobar |
-| T05 | Alta | Crear tablero Kanban compartido | Plataforma acordada | Tareas cargadas en Pendiente, En proceso, En revisión y Hecho | Pendiente |
-| T06 | Alta | Consultar base asignada y herramienta ETL | Respuesta del profesor | Fuente, forma de acceso y herramienta confirmadas por escrito | Hecho: usuario confirmó Chinook y Data Fusion |
+| T05 | Alta | Crear tablero Kanban compartido | Plataforma acordada | Tareas cargadas en Pendiente, En proceso, En revisión y Hecho | En proceso: Project y vistas mostrados; falta verificar tareas, responsables y fechas |
+| T06 | Alta | Consultar base asignada y herramienta ETL | Respuesta del profesor | Fuente, forma de acceso y herramienta confirmadas por escrito | Chinook y Data Fusion confirmados inicialmente; usuario comunicó autorización para AWS. Falta adjuntar esa confirmación escrita |
 | T07 | Alta | Obtener y abrir la fuente en el entorno local | T06 | Formato y, si aplica, motor registrados; apertura verificada | Hecho: 11 CSV abiertos localmente; no hubo restauración en un motor |
 | T08 | Alta | Inventariar tablas, claves y relaciones | T07 | Diccionario inicial con campos, tipos y conteos | En proceso: conteos y relaciones iniciales revisados; falta diccionario completo |
 | T09 | Alta | Formular preguntas de negocio y objetivos medibles | T08 y validación del profesor | Preguntas factibles, medidas y criterios de éxito documentados | En proceso: tres preguntas propuestas; falta validación y objetivos medibles |
@@ -57,9 +57,9 @@ Este archivo sirve para preparar las tareas. No sustituye el tablero visual comp
 
 ## Lo primero que debe hacer el equipo ahora
 
-Al preparar el plan se propuso enviar la consulta de [requisitos](01-requisitos.md#primera-consulta-sugerida-al-profesor). Actualización del 08/11/2026: el usuario ya confirmó la base y la herramienta. Ahora toca revisar el modelo propuesto con el equipo y resolver el acceso a Google Cloud, el destino del DW, el tablero y los roles.
+Al preparar el plan se propuso enviar la consulta de [requisitos](01-requisitos.md#primera-consulta-sugerida-al-profesor). Actualización del 09/11/2026: el destino RDS MySQL y la primera carga con AWS Glue ya se comprobaron. Ahora toca revisar el avance con el equipo y continuar con fechas, canciones, ventas, recarga y Excel. El [registro de avance de esta jornada](sprints/avance-2026-11-09.md) no sustituye la planificación ni el cierre de sprint pendientes.
 
-La confirmación y la comprobación de lectura local están registradas en la [ficha de recepción de la base](04-ficha-fuente.md). No se ha implementado aún la carga en nube.
+La confirmación y lectura local están registradas en la [ficha de recepción](04-ficha-fuente.md); la [primera carga de clientes](08-etl-dimcliente.md) conserva configuración y resultados comprobados en nube.
 
 ## Rutina semanal
 

@@ -1,0 +1,67 @@
+[
+  {
+    "archivo": "01-conexion-glue-lista.png",
+    "sha256": "d8319350ce95f71bbf323b082a5cc22b00b7339acb4c1b01c0409215db4c9285",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "02-crawler-cuatro-tablas.png",
+    "sha256": "465280f241303eb98ffdb600f5cad27ec7c7b228b5115d530fc1d19bda72c9a8",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "03-origen-customer-csv.png",
+    "sha256": "1ce0d0fbffcc462688b56bff0c3ac71ab8ba3a53217868d00a945a883de50fbf",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "04-transformacion-clientes.png",
+    "sha256": "76fe16963a94acbfa28fb93c01ca3a6d2d10562a9981b572c012d19af5ac5efd",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "05-flujo-clientes.png",
+    "sha256": "8b4ec940980118c9c191d9123e1df1f6c521c22868f4444fafb62f46d5a9612d",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "06-recursos-job.png",
+    "sha256": "2dd18c9fd7f2f61af12dc6195b7088c5e53498a18fdfabe9062aa5306b6561e2",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "07-rutas-conexion-job.png",
+    "sha256": "bf57e576c8f015c25dcfbf40478bde36371aa977f98f8d2df520fff39f19bc8b",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "08-ejecucion-job-running.png",
+    "sha256": "42610ea82698b3cbdc20a9d936b3e6dff32d1262622a894b84e5f70246705021",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "09-clientes-muestra.png",
+    "sha256": "84627119d95fbcff58a1b3ac7f92ef68cbadae392d9c598c88b4d35de05f3cd5",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "10-clientes-conteos.png",
+    "sha256": "cb60d2bb860e25ad41aa4cb37f43f54d2f1d61ddc7d139d3a60e8ca5d20622db",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "11-clientes-estados-sin-dato.png",
+    "sha256": "2dad064007ad3fe60d8c35c3ad40660d1c590b879db27c7d8e038dba3bac2e8e",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  },
+  {
+    "archivo": "12-ejecucion-estructura-workbench.txt",
+    "sha256": "0a0db61b0ceae662b54c8b378f274156037d06429cd9b13cbba950e0f4abd75e",
+    "origen": "Registro de Action Output adjunto por el usuario; copia sin modificar"
+  },
+  {
+    "archivo": "13-historial-ejecuciones-clientes.png",
+    "sha256": "f15018e11f4b5baca8346b046402ebffec9daa7120180c7cd00877c42c2d1fa8",
+    "origen": "Captura adjunta por el usuario en este chat; copia sin modificar"
+  }
+]

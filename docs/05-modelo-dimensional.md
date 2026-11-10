@@ -4,7 +4,7 @@ Fecha: 8 de noviembre de 2026. Estado: propuesta basada en los CSV recibidos, pe
 
 ## Alcance
 
-Analizar ventas de contenido digital. El usuario confirmó la asignación de `chinook_digital_store` y de Google Cloud Data Fusion. El destino del DW y su motor aún no están definidos; este es un modelo lógico, no infraestructura desplegada.
+Analizar ventas de contenido digital. El usuario confirmó inicialmente la asignación de `chinook_digital_store` y Google Cloud Data Fusion. Actualización del 09/11/2026: comunicó autorización para usar AWS y confirmó una instancia RDS MySQL 8.4.11 con conexión desde Workbench. El diagrama lógico se conserva sin cambios; la [guía de implementación](06-crear-dw-mysql.md) concreta la estructura física y su verificación. La carga ETL con AWS Glue sigue pendiente.
 
 Preguntas propuestas:
 
@@ -92,10 +92,10 @@ Hay 29 estados vacíos en `Customer`. En la dimensión se propone representar es
 ## Orden de implementación y validación
 
 1. Revisar las preguntas y el diagrama con el equipo.
-2. Confirmar el motor de destino y concretar tipos y generación de claves.
-3. Crear y cargar dimensiones; después resolver y cargar los hechos con Data Fusion.
+2. Ejecutar los scripts preparados para MySQL en RDS y comprobar sus tipos, claves y restricciones.
+3. Cargar dimensiones; después resolver y cargar los hechos con AWS Glue, como alternativa autorizada comunicada por el usuario.
 4. Exigir unicidad de `InvoiceLineId` y claves naturales de las dimensiones. Repetir la carga no debe duplicar hechos ni cambiar las claves sustitutas de dimensiones ya cargadas.
 5. Comprobar 2.240 hechos, 2.240 unidades y un importe de 2.328,60 para esta instantánea, además de conciliación por factura y ausencia de hechos sin dimensión.
 6. Conectar Excel y responder las preguntas, diferenciando recuento de detalles de recuento distinto de facturas.
 
-Este diseño y sus controles no prueban todavía que el ETL, la infraestructura o la conexión a Excel funcionen.
+Actualización del 09/11/2026: la estructura MySQL se ejecutó correctamente y se comprobó la primera carga de clientes con 59 filas y 29 estados normalizados; ver [resultados y evidencia](08-etl-dimcliente.md). El diagrama permanece sin cambios. Las cargas de fechas, canciones y ventas y la conexión a Excel siguen pendientes.

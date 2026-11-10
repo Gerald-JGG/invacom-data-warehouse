@@ -6,14 +6,14 @@ Proyecto académico de ISW-911 para diseñar e implementar un Data Warehouse (DW
 
 Inicio del proyecto: 7 de noviembre de 2026.
 
-Actualización del 8 de noviembre de 2026: se recibió la fuente `chinook_digital_store` en 11 archivos CSV y el usuario confirmó Google Cloud Data Fusion como herramienta asignada. Se preparó una propuesta de modelo estrella de ventas con diagrama editable. El acceso a Google Cloud, el motor de destino y la implementación del DW/ETL siguen pendientes.
+Actualización del 9 de noviembre de 2026: el DW tiene sus cuatro tablas creadas en Amazon RDS MySQL 8.4.11. Se configuraron S3, IAM, endpoints privados, conexión Glue y catálogo de tablas. La primera carga de `DimCliente` mediante AWS Glue se comprobó en MySQL: 59 clientes, 59 IDs y claves distintos, y 29 estados normalizados como `Sin dato`. Se conservan capturas y el registro SQL. Las cargas de fechas, canciones y ventas, la recarga sin duplicados y Excel siguen pendientes. El profesor permitió usar AWS como alternativa a Data Fusion, según lo comunicado por el usuario.
 
 ## Por dónde empezar
 
 1. Revisar los [requisitos y dudas pendientes](docs/01-requisitos.md).
 2. Completar la [planificación de la primera semana](docs/02-plan-inicial.md) con el equipo.
 3. Revisar con el equipo el [modelo dimensional propuesto](docs/05-modelo-dimensional.md).
-4. Resolver el acceso a Google Cloud y confirmar el destino del DW antes de implementar el ETL.
+4. Consultar la [infraestructura AWS](docs/07-infraestructura-aws.md) y la [primera carga de clientes](docs/08-etl-dimcliente.md). Continuar con las dimensiones restantes y los hechos; no repetir la carga de clientes hasta implementar la recarga por clave.
 
 ## Documentación
 
@@ -24,6 +24,18 @@ Actualización del 8 de noviembre de 2026: se recibió la fuente `chinook_digita
 - [Registro de avances](docs/03-registro-avances.md): evidencia resumida del trabajo realizado.
 - [Recepción de la base de datos](docs/04-ficha-fuente.md): ficha y pasos para confirmar la asignación y verificar el acceso.
 - [Modelo dimensional de ventas](docs/05-modelo-dimensional.md): granularidad, claves, medidas, controles y diagrama editable.
+- [Creación del DW en MySQL](docs/06-crear-dw-mysql.md): ejecución en Workbench, restricciones y controles de estructura.
+- [Infraestructura AWS](docs/07-infraestructura-aws.md): recursos, configuración, permisos y solución de bloqueos.
+- [ETL de clientes](docs/08-etl-dimcliente.md): extracción, transformación, parámetros, resultados y límites de la primera carga.
+- [Evidencias del 9 de noviembre](docs/evidencias/2026-11-09/README.md): capturas originales, registro SQL y manifiesto SHA-256.
+- [Avance para el seguimiento del sprint](docs/sprints/avance-2026-11-09.md): trabajo realizado y pendientes para el Scrum Master.
+
+## SQL disponible
+
+- [Crear las tablas MySQL](sql/01_crear_dw_mysql.sql).
+- [Consultar su estructura](sql/02_verificar_estructura_mysql.sql).
+- [Validar la carga de clientes](sql/03_validar_dimcliente.sql).
+- [Transformación Spark SQL de clientes](etl/sql/transformar_dimcliente.sql), para Glue; no ejecutar en Workbench.
 
 Los documentos Markdown son material de trabajo para preparar el documento final en APA 7; no sustituyen esa entrega.
 
@@ -36,4 +48,4 @@ Los documentos Markdown son material de trabajo para preparar el documento final
 - Revisar `git status` y `git diff --staged` antes de confirmar cambios.
 - No versionar contraseñas, archivos `.env`, respaldos de bases de datos ni datos fuente sin revisar su contenido y autorización de distribución.
 
-Repositorio remoto: <https://github.com/Gerald-JGG/invacom-data-warehouse>. El tablero Kanban compartido sigue pendiente de configuración con el equipo. Los nuevos commits locales deben publicarse para que los demás integrantes los vean.
+Repositorio remoto: <https://github.com/Gerald-JGG/invacom-data-warehouse>. Se mostró la creación del GitHub Project `Invacom Data Warehouse` con vistas Product Backlog, Sprint Actual y Cronograma; faltan su enlace y la verificación de asignaciones, fechas y cierre de sprint. Los nuevos archivos documentales se mantienen locales hasta realizar el commit y publicación correspondientes.
