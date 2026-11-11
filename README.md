@@ -26,12 +26,15 @@ Actualización del 9 de noviembre de 2026: el DW tiene sus cuatro tablas creadas
 - [Modelo dimensional de ventas](docs/05-modelo-dimensional.md): granularidad, claves, medidas, controles y diagrama editable.
 - [Creación del DW en MySQL](docs/06-crear-dw-mysql.md): ejecución en Workbench, restricciones y controles de estructura.
 - [Infraestructura AWS](docs/07-infraestructura-aws.md): recursos, configuración, permisos y solución de bloqueos.
+- [Diagrama de arquitectura AWS](docs/10-arquitectura-aws.md): flujo de datos, catálogo, permisos y red; disponible en draw.io, SVG y PNG.
+- [Excel conectado al DW](docs/11-excel-clientes.md): importación de clientes, tabla dinámica y dashboard inicial. [Abrir el libro](excel/analisis-ventas-chinook.xlsx).
 - [ETL de clientes](docs/08-etl-dimcliente.md): extracción, transformación, parámetros, resultados y límites de la primera carga.
 - [Evidencias del 9 de noviembre](docs/evidencias/2026-11-09/README.md): capturas originales, registro SQL y manifiesto SHA-256.
 - [Avance para el seguimiento del sprint](docs/sprints/avance-2026-11-09.md): trabajo realizado y pendientes para el Scrum Master.
 
 ## SQL disponible
 
+- [Crear los destinos staging de los 11 CSV](sql/04_crear_staging_chinook_mysql.sql) y [validar sus conteos](sql/05_validar_staging_chinook_mysql.sql). Preparados, pendientes de ejecución; [instrucciones y mapeo](docs/09-staging-chinook.md).
 - [Crear las tablas MySQL](sql/01_crear_dw_mysql.sql).
 - [Consultar su estructura](sql/02_verificar_estructura_mysql.sql).
 - [Validar la carga de clientes](sql/03_validar_dimcliente.sql).

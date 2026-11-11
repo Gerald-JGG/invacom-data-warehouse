@@ -4,7 +4,7 @@ Fecha de registro: 9 de noviembre de 2026, hora de Costa Rica (UTC−06:00).
 
 ## Arquitectura y decisiones
 
-Ruta de implementación: **CSV de Chinook en S3 → ETL con AWS Glue → DW MySQL en RDS → Excel**. La primera carga de clientes ya se comprobó en MySQL; las otras dimensiones, hechos y Excel siguen pendientes.
+Ruta de implementación: **CSV de Chinook en S3 → ETL con AWS Glue → DW MySQL en RDS → Excel**. La primera carga de clientes ya se comprobó en MySQL. Actualización del 10 de noviembre: el usuario mostró Excel con 59 clientes importados mediante Power Query, una tabla dinámica por país y un gráfico con segmentador. Las otras dimensiones, hechos y el dashboard de ventas siguen pendientes de comprobar. Consultar el [diagrama de arquitectura](10-arquitectura-aws.md).
 
 Inicialmente el profesor asignó Google Cloud Data Fusion. El usuario reportó el error `OR_BACR2_59` al configurar facturación de Google Cloud y posteriormente comunicó que el profesor permitió usar AWS. No se atribuye una causa definitiva al error de Google. Redshift quedó descartado para esta implementación después de que la consola mostró una restricción de acceso; el proyecto #1 no exige un motor de DW específico.
 

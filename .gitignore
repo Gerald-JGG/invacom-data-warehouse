@@ -25,3 +25,6 @@ data/raw/
 # Archivos temporales
 tmp/
 *.log
+
+# Instaladores descargados para configurar las herramientas locales
+*.msi

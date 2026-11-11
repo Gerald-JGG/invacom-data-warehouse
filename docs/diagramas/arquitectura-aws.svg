@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+<rect width="1800" height="1120" fill="#ffffff"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#2563a6"/></marker><marker id="meta" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#147d83"/></marker></defs>
+<text x="40" y="52" font-family="Arial, sans-serif" font-size="34" fill="#173554" font-weight="700">
+<tspan x="40" dy="0">Chinook | Arquitectura de datos en AWS</tspan>
+</text>
+<text x="40" y="89" font-family="Arial, sans-serif" font-size="20" fill="#536477" font-weight="400">
+<tspan x="40" dy="0">Proyecto 1 · Minería de Datos · Estado comprobado al 10 de noviembre de 2026</tspan>
+</text>
+<rect x="300" y="130" width="1160" height="870" rx="14" fill="#f6f8fc" stroke="#c7d3e1" stroke-width="1.5"/>
+<text x="325" y="167" font-family="Arial, sans-serif" font-size="20" fill="#173554" font-weight="700">
+<tspan x="325" dy="0">AWS · Región Ohio (us-east-2)</tspan>
+</text>
+<rect x="340" y="210" width="270" height="135" rx="14" fill="#ffffff" stroke="#c7d3e1" stroke-width="1.5"/>
+<text x="358" y="242" font-family="Arial, sans-serif" font-size="22" fill="#173554" font-weight="700">
+<tspan x="358" dy="0">IAM</tspan>
+</text>
+<text x="358" y="275" font-family="Arial, sans-serif" font-size="17" fill="#536477" font-weight="400">
+<tspan x="358" dy="0">AWSGlueServiceRole</tspan>
+<tspan x="358" dy="24.65">Permisos sobre S3</tspan>
+<tspan x="358" dy="24.65">y secretos de conexión</tspan>
+</text>
+<rect x="690" y="210" width="300" height="135" rx="14" fill="#ecf7f6" stroke="#9dcecb" stroke-width="1.5"/>
+<text x="708" y="242" font-family="Arial, sans-serif" font-size="21" fill="#173554" font-weight="700">
+<tspan x="708" dy="0">Crawler y Data Catalog</tspan>
+</text>
+<text x="708" y="275" font-family="Arial, sans-serif" font-size="17" fill="#536477" font-weight="400">
+<tspan x="708" dy="0">invacom_catalog</tspan>
+<tspan x="708" dy="24.65">Registra columnas y tablas</tspan>
+<tspan x="708" dy="24.65">No carga registros del CSV</tspan>
+</text>
+<rect x="1100" y="210" width="320" height="135" rx="14" fill="#ffffff" stroke="#c7d3e1" stroke-width="1.5"/>
+<text x="1118" y="242" font-family="Arial, sans-serif" font-size="21" fill="#173554" font-weight="700">
+<tspan x="1118" dy="0">Conexión de Glue</tspan>
+</text>
+<text x="1118" y="275" font-family="Arial, sans-serif" font-size="17" fill="#536477" font-weight="400">
+<tspan x="1118" dy="0">invacom-mysql-connection</tspan>
+<tspan x="1118" dy="24.65">MySQL con SSL</tspan>
+<tspan x="1118" dy="24.65">Acceso mediante VPC y subred</tspan>
+</text>
+<rect x="40" y="415" width="220" height="215" rx="14" fill="#ffffff" stroke="#c7d3e1" stroke-width="1.5"/>
+<text x="58" y="451" font-family="Arial, sans-serif" font-size="23" fill="#173554" font-weight="700">
+<tspan x="58" dy="0">Fuente</tspan>
+</text>
+<text x="58" y="488" font-family="Arial, sans-serif" font-size="18" fill="#536477" font-weight="400">
+<tspan x="58" dy="0">11 CSV de Chinook</tspan>
+<tspan x="58" dy="26.099999999999998">Archivos originales</tspan>
+<tspan x="58" dy="26.099999999999998">asignados al equipo</tspan>
+</text>
+<text x="58" y="593" font-family="Arial, sans-serif" font-size="18" fill="#147d83" font-weight="700">
+<tspan x="58" dy="0">Recibidos</tspan>
+</text>
+<rect x="340" y="415" width="270" height="215" rx="14" fill="#ffffff" stroke="#a8bdd6" stroke-width="1.5"/>
+<text x="358" y="451" font-family="Arial, sans-serif" font-size="24" fill="#173554" font-weight="700">
+<tspan x="358" dy="0">Amazon S3</tspan>
+</text>
+<text x="358" y="488" font-family="Arial, sans-serif" font-size="17" fill="#536477" font-weight="400">
+<tspan x="358" dy="0">invacom-chinook-2026</tspan>
+<tspan x="358" dy="24.65">raw/ · 11 CSV originales</tspan>
+<tspan x="358" dy="24.65">scripts/ y temp/ para Glue</tspan>
+<tspan x="358" dy="24.65">Bucket privado</tspan>
+</text>
+<text x="358" y="608" font-family="Arial, sans-serif" font-size="18" fill="#147d83" font-weight="700">
+<tspan x="358" dy="0">Fuente cargada</tspan>
+</text>
+<rect x="690" y="415" width="300" height="215" rx="14" fill="#ffffff" stroke="#a8bdd6" stroke-width="1.5"/>
+<text x="708" y="451" font-family="Arial, sans-serif" font-size="24" fill="#173554" font-weight="700">
+<tspan x="708" dy="0">AWS Glue</tspan>
+</text>
+<text x="708" y="488" font-family="Arial, sans-serif" font-size="18" fill="#536477" font-weight="400">
+<tspan x="708" dy="0">ETL visual con Spark SQL</tspan>
+<tspan x="708" dy="26.099999999999998">Extrae, une y transforma</tspan>
+<tspan x="708" dy="26.099999999999998">Carga las tablas del DW</tspan>
+<tspan x="708" dy="26.099999999999998">Un job por tabla destino</tspan>
+</text>
+<text x="708" y="608" font-family="Arial, sans-serif" font-size="17" fill="#147d83" font-weight="700">
+<tspan x="708" dy="0">Clientes: carga comprobada</tspan>
+</text>
+<rect x="1100" y="415" width="320" height="215" rx="14" fill="#ffffff" stroke="#a8bdd6" stroke-width="1.5"/>
+<text x="1118" y="451" font-family="Arial, sans-serif" font-size="23" fill="#173554" font-weight="700">
+<tspan x="1118" dy="0">Amazon RDS · MySQL</tspan>
+</text>
+<text x="1118" y="488" font-family="Arial, sans-serif" font-size="18" fill="#536477" font-weight="400">
+<tspan x="1118" dy="0">Instancia: invacom-dw</tspan>
+<tspan x="1118" dy="26.099999999999998">Base: invacom_dw</tspan>
+<tspan x="1118" dy="26.099999999999998">DimCliente · DimFecha</tspan>
+<tspan x="1118" dy="26.099999999999998">DimCancion · FactVenta</tspan>
+</text>
+<text x="1118" y="608" font-family="Arial, sans-serif" font-size="17" fill="#147d83" font-weight="700">
+<tspan x="1118" dy="0">Estructura: 4 tablas creadas</tspan>
+</text>
+<rect x="1510" y="415" width="250" height="215" rx="14" fill="#ffffff" stroke="#a8bdd6" stroke-width="1.5"/>
+<text x="1528" y="451" font-family="Arial, sans-serif" font-size="23" fill="#173554" font-weight="700">
+<tspan x="1528" dy="0">Microsoft Excel</tspan>
+</text>
+<text x="1528" y="488" font-family="Arial, sans-serif" font-size="17" fill="#536477" font-weight="400">
+<tspan x="1528" dy="0">Power Query / MySQL</tspan>
+<tspan x="1528" dy="24.65">Tabla dinámica de clientes</tspan>
+<tspan x="1528" dy="24.65">Gráfico por país</tspan>
+<tspan x="1528" dy="24.65">Filtro de país</tspan>
+</text>
+<text x="1528" y="608" font-family="Arial, sans-serif" font-size="17" fill="#147d83" font-weight="700">
+<tspan x="1528" dy="0">59 clientes importados</tspan>
+</text>
+<polyline points="260,520 340,520" fill="none" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="610,520 690,520" fill="none" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="990,520 1100,520" fill="none" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="1420,520 1510,520" fill="none" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="1427" y="491" font-family="Arial, sans-serif" font-size="15" fill="#2563a6" font-weight="400">
+<tspan x="1427" dy="0">Consulta</tspan>
+</text>
+<polyline points="840,345 840,415" fill="none" stroke="#147d83" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#meta)"/>
+<text x="853" y="386" font-family="Arial, sans-serif" font-size="15" fill="#147d83" font-weight="400">
+<tspan x="853" dy="0">Metadatos</tspan>
+</text>
+<polyline points="1100,570 1040,570 1040,320 990,320" fill="none" stroke="#147d83" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#meta)"/>
+<text x="1000" y="663" font-family="Arial, sans-serif" font-size="16" fill="#147d83" font-weight="400">
+<tspan x="1000" dy="0">El crawler inspecciona el esquema de MySQL</tspan>
+</text>
+<rect x="340" y="755" width="1080" height="205" rx="14" fill="#edf2f8" stroke="#c7d3e1" stroke-width="1.5"/>
+<text x="360" y="790" font-family="Arial, sans-serif" font-size="22" fill="#173554" font-weight="700">
+<tspan x="360" dy="0">Red y servicios de acceso</tspan>
+</text>
+<text x="360" y="827" font-family="Arial, sans-serif" font-size="18" fill="#536477" font-weight="400">
+<tspan x="360" dy="0">RDS y las interfaces de acceso de Glue utilizan la VPC y la subred configuradas.</tspan>
+<tspan x="360" dy="26.099999999999998">Security group invacom-dw-sg: acceso MySQL desde IPs autorizadas y comunicación interna.</tspan>
+<tspan x="360" dy="26.099999999999998">Endpoints Interface: STS y Secrets Manager. Endpoint Gateway: S3.</tspan>
+<tspan x="360" dy="26.099999999999998">Secrets Manager conserva las credenciales de conexión. STS permite asumir el rol de Glue.</tspan>
+</text>
+<rect x="1510" y="755" width="250" height="155" rx="14" fill="#ffffff" stroke="#c7d3e1" stroke-width="1.5"/>
+<text x="1528" y="790" font-family="Arial, sans-serif" font-size="21" fill="#173554" font-weight="700">
+<tspan x="1528" dy="0">MySQL Workbench</tspan>
+</text>
+<text x="1528" y="824" font-family="Arial, sans-serif" font-size="17" fill="#536477" font-weight="400">
+<tspan x="1528" dy="0">Crear y consultar tablas</tspan>
+<tspan x="1528" dy="24.65">Validar conteos y datos</tspan>
+<tspan x="1528" dy="24.65">Acceso TCP 3306</tspan>
+</text>
+<polyline points="1635,755 1635,700 1310,700 1310,630" fill="none" stroke="#147d83" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#meta)"/>
+<text x="40" y="1038" font-family="Arial, sans-serif" font-size="18" fill="#536477" font-weight="400">
+<tspan x="40" dy="0">Línea continua: recorrido de datos. Línea discontinua: metadatos o acceso de consulta.</tspan>
+</text>
+<text x="40" y="1073" font-family="Arial, sans-serif" font-size="19" fill="#173554" font-weight="400">
+<tspan x="40" dy="0">Pendiente de comprobar: cargas de DimFecha, DimCancion y FactVenta, recargas sin duplicados y dashboard de ventas.</tspan>
+</text>
+</svg>

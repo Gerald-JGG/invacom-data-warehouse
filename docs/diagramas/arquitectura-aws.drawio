@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="arquitectura-chinook" name="Arquitectura AWS">
+    <mxGraphModel dx="1800" dy="1120" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1120" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Chinook | Arquitectura de datos en AWS" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=34;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="18" width="1700" height="57.3" />
+        </mxCell>
+        <mxCell id="subtitle" value="Proyecto 1 · Minería de Datos · Estado comprobado al 10 de noviembre de 2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=20;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="69" width="1700" height="37.0" />
+        </mxCell>
+        <mxCell id="cloud" value="" style="rounded=1;arcSize=7;fillColor=#f6f8fc;strokeColor=#c7d3e1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="130" width="1160" height="870" />
+        </mxCell>
+        <mxCell id="region" value="AWS · Región Ohio (us-east-2)" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=20;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="325" y="147" width="1000" height="37.0" />
+        </mxCell>
+        <mxCell id="iam" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#c7d3e1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="340" y="210" width="270" height="135" />
+        </mxCell>
+        <mxCell id="iamtitle" value="IAM" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=22;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="358" y="220" width="235" height="39.9" />
+        </mxCell>
+        <mxCell id="iambody" value="AWSGlueServiceRole&#10;Permisos sobre S3&#10;y secretos de conexión" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="358" y="258" width="235" height="81.95" />
+        </mxCell>
+        <mxCell id="catalog" value="" style="rounded=1;arcSize=7;fillColor=#ecf7f6;strokeColor=#9dcecb;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="210" width="300" height="135" />
+        </mxCell>
+        <mxCell id="catalogtitle" value="Crawler y Data Catalog" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=21;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="708" y="221" width="270" height="38.45" />
+        </mxCell>
+        <mxCell id="catalogbody" value="invacom_catalog&#10;Registra columnas y tablas&#10;No carga registros del CSV" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="708" y="258" width="268" height="81.95" />
+        </mxCell>
+        <mxCell id="conn" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#c7d3e1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1100" y="210" width="320" height="135" />
+        </mxCell>
+        <mxCell id="conntitle" value="Conexión de Glue" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=21;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="221" width="285" height="38.45" />
+        </mxCell>
+        <mxCell id="connbody" value="invacom-mysql-connection&#10;MySQL con SSL&#10;Acceso mediante VPC y subred" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="258" width="287" height="81.95" />
+        </mxCell>
+        <mxCell id="source" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#c7d3e1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="415" width="220" height="215" />
+        </mxCell>
+        <mxCell id="sourcetitle" value="Fuente" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=23;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="428" width="185" height="41.35" />
+        </mxCell>
+        <mxCell id="sourcebody" value="11 CSV de Chinook&#10;Archivos originales&#10;asignados al equipo" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="470" width="185" height="86.3" />
+        </mxCell>
+        <mxCell id="sourcestatus" value="Recibidos" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#147d83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="575" width="180" height="34.099999999999994" />
+        </mxCell>
+        <mxCell id="s3" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#a8bdd6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="340" y="415" width="270" height="215" />
+        </mxCell>
+        <mxCell id="s3title" value="Amazon S3" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=24;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="358" y="427" width="235" height="42.8" />
+        </mxCell>
+        <mxCell id="s3body" value="invacom-chinook-2026&#10;raw/ · 11 CSV originales&#10;scripts/ y temp/ para Glue&#10;Bucket privado" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="358" y="471" width="235" height="106.6" />
+        </mxCell>
+        <mxCell id="s3status" value="Fuente cargada" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#147d83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="358" y="590" width="235" height="34.099999999999994" />
+        </mxCell>
+        <mxCell id="glue" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#a8bdd6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="415" width="300" height="215" />
+        </mxCell>
+        <mxCell id="gluetitle" value="AWS Glue" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=24;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="708" y="427" width="268" height="42.8" />
+        </mxCell>
+        <mxCell id="gluebody" value="ETL visual con Spark SQL&#10;Extrae, une y transforma&#10;Carga las tablas del DW&#10;Un job por tabla destino" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="708" y="470" width="268" height="112.39999999999999" />
+        </mxCell>
+        <mxCell id="gluestatus" value="Clientes: carga comprobada" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#147d83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="708" y="591" width="270" height="32.65" />
+        </mxCell>
+        <mxCell id="rds" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#a8bdd6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1100" y="415" width="320" height="215" />
+        </mxCell>
+        <mxCell id="rdstitle" value="Amazon RDS · MySQL" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=23;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="428" width="285" height="41.35" />
+        </mxCell>
+        <mxCell id="rdsbody" value="Instancia: invacom-dw&#10;Base: invacom_dw&#10;DimCliente · DimFecha&#10;DimCancion · FactVenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="470" width="285" height="112.39999999999999" />
+        </mxCell>
+        <mxCell id="rdsstatus" value="Estructura: 4 tablas creadas" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#147d83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1118" y="591" width="285" height="32.65" />
+        </mxCell>
+        <mxCell id="excel" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#a8bdd6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510" y="415" width="250" height="215" />
+        </mxCell>
+        <mxCell id="exceltitle" value="Microsoft Excel" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=23;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1528" y="428" width="215" height="41.35" />
+        </mxCell>
+        <mxCell id="excelbody" value="Power Query / MySQL&#10;Tabla dinámica de clientes&#10;Gráfico por país&#10;Filtro de país" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1528" y="471" width="215" height="106.6" />
+        </mxCell>
+        <mxCell id="excelstatus" value="59 clientes importados" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#147d83;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1528" y="591" width="215" height="32.65" />
+        </mxCell>
+        <mxCell id="upload" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#2563a6;strokeWidth=2.5;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="260" y="520" />
+            <mxPoint as="targetPoint" x="340" y="520" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extract" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#2563a6;strokeWidth=2.5;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="610" y="520" />
+            <mxPoint as="targetPoint" x="690" y="520" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="load" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#2563a6;strokeWidth=2.5;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="990" y="520" />
+            <mxPoint as="targetPoint" x="1100" y="520" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="query" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#2563a6;strokeWidth=2.5;dashed=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1420" y="520" />
+            <mxPoint as="targetPoint" x="1510" y="520" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="querylabel" value="Consulta" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=15;fontColor=#2563a6;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1427" y="476" width="82" height="29.75" />
+        </mxCell>
+        <mxCell id="metadata" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#147d83;strokeWidth=2.5;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="840" y="345" />
+            <mxPoint as="targetPoint" x="840" y="415" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="metalabel" value="Metadatos" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=15;fontColor=#147d83;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="853" y="371" width="140" height="29.75" />
+        </mxCell>
+        <mxCell id="crawl" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#147d83;strokeWidth=2.5;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1100" y="570" />
+            <mxPoint as="targetPoint" x="990" y="320" />
+            <Array as="points">
+              <mxPoint x="1040" y="570" />
+              <mxPoint x="1040" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="crawllabel" value="El crawler inspecciona el esquema de MySQL" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=16;fontColor=#147d83;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="647" width="410" height="31.2" />
+        </mxCell>
+        <mxCell id="network" value="" style="rounded=1;arcSize=7;fillColor=#edf2f8;strokeColor=#c7d3e1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="340" y="755" width="1080" height="205" />
+        </mxCell>
+        <mxCell id="networktitle" value="Red y servicios de acceso" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=22;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="768" width="1025" height="39.9" />
+        </mxCell>
+        <mxCell id="networkbody" value="RDS y las interfaces de acceso de Glue utilizan la VPC y la subred configuradas.&#10;Security group invacom-dw-sg: acceso MySQL desde IPs autorizadas y comunicación interna.&#10;Endpoints Interface: STS y Secrets Manager. Endpoint Gateway: S3.&#10;Secrets Manager conserva las credenciales de conexión. STS permite asumir el rol de Glue." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="809" width="1025" height="112.39999999999999" />
+        </mxCell>
+        <mxCell id="workbench" value="" style="rounded=1;arcSize=7;fillColor=#ffffff;strokeColor=#c7d3e1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510" y="755" width="250" height="155" />
+        </mxCell>
+        <mxCell id="wbtitle" value="MySQL Workbench" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=21;fontColor=#173554;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1528" y="769" width="215" height="38.45" />
+        </mxCell>
+        <mxCell id="wbbody" value="Crear y consultar tablas&#10;Validar conteos y datos&#10;Acceso TCP 3306" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=17;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1528" y="807" width="215" height="81.95" />
+        </mxCell>
+        <mxCell id="wbquery" edge="1" parent="1" style="edgeStyle=none;rounded=0;endArrow=block;endFill=1;strokeColor=#147d83;strokeWidth=2.5;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1635" y="755" />
+            <mxPoint as="targetPoint" x="1310" y="630" />
+            <Array as="points">
+              <mxPoint x="1635" y="700" />
+              <mxPoint x="1310" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" value="Línea continua: recorrido de datos. Línea discontinua: metadatos o acceso de consulta." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=18;fontColor=#536477;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1020" width="1720" height="34.099999999999994" />
+        </mxCell>
+        <mxCell id="pending" value="Pendiente de comprobar: cargas de DimFecha, DimCancion y FactVenta, recargas sin duplicados y dashboard de ventas." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=top;fontFamily=Arial;fontSize=19;fontColor=#173554;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1054" width="1720" height="35.55" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
