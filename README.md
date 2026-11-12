@@ -13,7 +13,7 @@ Actualización del 9 de noviembre de 2026: el DW tiene sus cuatro tablas creadas
 1. Revisar los [requisitos y dudas pendientes](docs/01-requisitos.md).
 2. Completar la [planificación de la primera semana](docs/02-plan-inicial.md) con el equipo.
 3. Revisar con el equipo el [modelo dimensional propuesto](docs/05-modelo-dimensional.md).
-4. Consultar la [infraestructura AWS](docs/07-infraestructura-aws.md) y la [primera carga de clientes](docs/08-etl-dimcliente.md). Continuar con las dimensiones restantes y los hechos; no repetir la carga de clientes hasta implementar la recarga por clave.
+4. Consultar la [infraestructura AWS](docs/07-infraestructura-aws.md), la [primera carga de clientes](docs/08-etl-dimcliente.md) y las [recargas visuales validadas el 12 de noviembre](docs/14-recargas-visuales.md). Usar las versiones guardadas con sus filtros; el script original de clientes se conserva solo como respaldo historico.
 
 ## Documentación
 
@@ -29,6 +29,9 @@ Actualización del 9 de noviembre de 2026: el DW tiene sus cuatro tablas creadas
 - [Diagrama de arquitectura AWS](docs/10-arquitectura-aws.md): flujo de datos, catálogo, permisos y red; disponible en draw.io, SVG y PNG.
 - [Excel conectado al DW](docs/11-excel-clientes.md): importación de clientes, tabla dinámica y dashboard inicial. [Abrir el libro](excel/analisis-ventas-chinook.xlsx).
 - [ETL de clientes](docs/08-etl-dimcliente.md): extracción, transformación, parámetros, resultados y límites de la primera carga.
+- [Recarga de clientes por clave](docs/13-recarga-dimcliente.md): upsert, pruebas locales y dos ejecuciones confirmadas por el equipo.
+- [Recargas de los cuatro ETL visuales](docs/14-recargas-visuales.md): filtros por clave, controles finales, limites y exportaciones PySpark pendientes.
+- [Evidencias del 12 de noviembre](docs/evidencias/2026-11-12/README.md): seis capturas originales con manifiesto SHA-256 y resultados confirmados por el equipo.
 - [Evidencias del 9 de noviembre](docs/evidencias/2026-11-09/README.md): capturas originales, registro SQL y manifiesto SHA-256.
 - [Avance para el seguimiento del sprint](docs/sprints/avance-2026-11-09.md): trabajo realizado y pendientes para el Scrum Master.
 
@@ -38,6 +41,8 @@ Actualización del 9 de noviembre de 2026: el DW tiene sus cuatro tablas creadas
 - [Crear las tablas MySQL](sql/01_crear_dw_mysql.sql).
 - [Consultar su estructura](sql/02_verificar_estructura_mysql.sql).
 - [Validar la carga de clientes](sql/03_validar_dimcliente.sql).
+- [Comprobar dos recargas de clientes](sql/06_validar_recarga_dimcliente_mysql.sql), conservando las claves existentes.
+- [Validar las cuatro recargas del DW](sql/07_validar_recargas_dw_mysql.sql), consultas de solo lectura para Workbench.
 - [Transformación Spark SQL de clientes](etl/sql/transformar_dimcliente.sql), para Glue; no ejecutar en Workbench.
 
 Los documentos Markdown son material de trabajo para preparar el documento final en APA 7; no sustituyen esa entrega.

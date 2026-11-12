@@ -1,0 +1,32 @@
+[
+  {
+    "archivo": "01-clientes-filtro-visual.png",
+    "bytes": 182801,
+    "sha256": "98a57445a33a1f23737a4a38b92430d3b0e431cb4358864a5edc9a856d6b659d"
+  },
+  {
+    "archivo": "02-clientes-claves-temporales.png",
+    "bytes": 88871,
+    "sha256": "4571d9e20bbb49ecf2c64e6fd77e0da8b6692c3c4826e291cbab5e51b4fc1404"
+  },
+  {
+    "archivo": "03-canciones-filtro-alias-correctos.png",
+    "bytes": 188918,
+    "sha256": "d092e90b0925fb7d53500b323621635b739f79ad9a921f6804d524b2669a01c4"
+  },
+  {
+    "archivo": "04-canciones-conteos.png",
+    "bytes": 26182,
+    "sha256": "090dd6757010f7e00f0ae74d207b26498d831c357dbce638a164bb5d2b58cda9"
+  },
+  {
+    "archivo": "05-ventas-flujo-visual.png",
+    "bytes": 96641,
+    "sha256": "7790de703cbdfcde7e05c954f6c74af11043bd83f8ac056f05122b805de3cdeb"
+  },
+  {
+    "archivo": "06-ventas-conteos.png",
+    "bytes": 59846,
+    "sha256": "b2b6386eb6188f481ac045870db955cc8f8e2d7816ddd3062616144ca69b56dc"
+  }
+]

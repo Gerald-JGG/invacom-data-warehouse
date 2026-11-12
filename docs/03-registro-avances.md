@@ -80,3 +80,34 @@ Los commits iniciales pertenecen a una única jornada. Los avances de semanas po
 Documentación ampliada: [infraestructura AWS](07-infraestructura-aws.md), [ETL de clientes](08-etl-dimcliente.md), [evidencias](evidencias/2026-11-09/README.md) y [avance para sprint](sprints/avance-2026-11-09.md).
 
 Pendientes: dimensiones de fecha y canción, hechos, recarga sin duplicados, controles de ventas, Excel, documento APA 7, revisión/cierre de sprint y sustentación. Esta actualización documental no modifica recursos de AWS, no vuelve a ejecutar el ETL y no modifica el diagrama.
+
+## 12 de noviembre de 2026 — Recargas y controles de duplicados
+
+- Se recibio el script PySpark original de clientes y se conservo identificado como
+  respaldo anterior al filtro visual.
+- Se preparo una version separada con validacion, upsert por CustomerId y
+  transaccion JDBC, sin modificar ClienteKey. Seis pruebas locales pasaron.
+- Gerald configuro el job adicional, confirmo dos ejecuciones Succeeded y conteos
+  estables de 59 clientes, 59 IDs, 59 claves y 29 estados Sin dato. Confirmo que
+  la comparacion contra la copia temporal de claves devolvio 0 cambios/eliminaciones.
+- El equipo adapto los cuatro ETL visuales con lecturas JDBC del destino y filtros
+  LEFT ANTI JOIN por CustomerId, TrackId, FechaKey e InvoiceLineId.
+- Se verificaron conteos finales: clientes 59; canciones 3503; calendario 1817,
+  del 2009-01-01 al 2013-12-22; ventas 2240 detalles, 412 facturas, 2240 unidades
+  e importe 2328.60. Las capturas respaldan canciones y ventas; los controles
+  finales de clientes y fechas fueron confirmados textualmente por Gerald.
+- Se corrigieron alias invertidos en canciones y un origen DimFecha sin configurar
+  en ventas. Se aclaro que Data preview usa muestras y no sustituye controles
+  completos posteriores a Run.
+- Se guardaron seis capturas originales con sus hashes, cuatro consultas Spark SQL
+  de filtrado y controles MySQL para reproducir las comprobaciones.
+- No se modificaron el Excel, el documento Word del otro integrante ni los diagramas.
+
+Detalle: [recarga de clientes](13-recarga-dimcliente.md),
+[cuatro ETL visuales](14-recargas-visuales.md) y
+[evidencias](evidencias/2026-11-12/README.md).
+
+Pendientes de esta parte: descargar y versionar los cuatro scripts PySpark actuales
+desde AWS. Los filtros visuales insertan nuevas claves, no actualizan atributos;
+no se probaron nuevas altas ni cambios de atributos. No se inventaron exportaciones
+de Glue ni capturas de ejecuciones que no fueron aportadas.
