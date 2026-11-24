@@ -1,0 +1,15 @@
+﻿columna_original,columna_espanol,tipo_inicial
+TrackId,id_pista,int64
+Name,nombre_pista,str
+AlbumId,id_album,int64
+MediaTypeId,id_tipo_medio,int64
+GenreId,id_genero,int64
+Composer,compositor,str
+Milliseconds,duracion_ms,int64
+Bytes,tamano_bytes,int64
+UnitPrice,precio_unitario,float64
+Album,album,str
+ArtistId,id_artista,int64
+Artist,artista,str
+Genre,genero,str
+MediaType,tipo_medio,str

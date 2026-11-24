@@ -1,0 +1,32 @@
+[
+  {
+    "tabla": "Track",
+    "url": "https://raw.githubusercontent.com/Gerald-JGG/invacom-data-warehouse/fcc25f0482b8186461312ac71c1c1f1805840309/chinook_digital_store/Track.csv",
+    "filas": 3503,
+    "sha256": "65d8505f018bb830c3a148309b8e49a326f3ba27ed4ee52c7fd4510f92f217e2"
+  },
+  {
+    "tabla": "Album",
+    "url": "https://raw.githubusercontent.com/Gerald-JGG/invacom-data-warehouse/fcc25f0482b8186461312ac71c1c1f1805840309/chinook_digital_store/Album.csv",
+    "filas": 347,
+    "sha256": "7339f2504f6096e3621acab5bc0b5b4b02a9ffcedeaefb01d8249a20f33fdfd3"
+  },
+  {
+    "tabla": "Artist",
+    "url": "https://raw.githubusercontent.com/Gerald-JGG/invacom-data-warehouse/fcc25f0482b8186461312ac71c1c1f1805840309/chinook_digital_store/Artist.csv",
+    "filas": 275,
+    "sha256": "f891d9c3a3c5148fabc4001987944a0481faf3211c992c1d12c77a3c13203b70"
+  },
+  {
+    "tabla": "Genre",
+    "url": "https://raw.githubusercontent.com/Gerald-JGG/invacom-data-warehouse/fcc25f0482b8186461312ac71c1c1f1805840309/chinook_digital_store/Genre.csv",
+    "filas": 25,
+    "sha256": "d56b3c1f0bc3b84e82babc7544f0bb71c36ef4de98695c4f0bc2e8872ab1615b"
+  },
+  {
+    "tabla": "MediaType",
+    "url": "https://raw.githubusercontent.com/Gerald-JGG/invacom-data-warehouse/fcc25f0482b8186461312ac71c1c1f1805840309/chinook_digital_store/MediaType.csv",
+    "filas": 5,
+    "sha256": "1a8cedb7a35d6b8a8cfdac467d02da1b1dfa8ac7dde87aa199ed4c03a59bf550"
+  }
+]

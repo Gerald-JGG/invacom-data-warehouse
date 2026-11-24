@@ -1,0 +1,4 @@
+﻿variable,limite_inferior,limite_superior,IQR,atipicos
+duracion_ms,35735.0,493191.0,114364.0,357
+tamano_bytes,456230.75,16153124.75,3924223.5,343
+precio_unitario,0.99,0.99,0.0,213

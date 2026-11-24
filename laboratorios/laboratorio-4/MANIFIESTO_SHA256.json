@@ -1,0 +1,23 @@
+{
+  "data_process.csv": "2daa84c1723c2c31303f6fcab886d920fd130f7c4fb150a4670090286f8251c8",
+  "fuentes/Album.csv": "7339f2504f6096e3621acab5bc0b5b4b02a9ffcedeaefb01d8249a20f33fdfd3",
+  "fuentes/Artist.csv": "f891d9c3a3c5148fabc4001987944a0481faf3211c992c1d12c77a3c13203b70",
+  "fuentes/Genre.csv": "d56b3c1f0bc3b84e82babc7544f0bb71c36ef4de98695c4f0bc2e8872ab1615b",
+  "fuentes/MediaType.csv": "1a8cedb7a35d6b8a8cfdac467d02da1b1dfa8ac7dde87aa199ed4c03a59bf550",
+  "fuentes/Track.csv": "65d8505f018bb830c3a148309b8e49a326f3ba27ed4ee52c7fd4510f92f217e2",
+  "lab4_IC2025.ipynb": "61bd6cb9f89091df581d99b66220d3de04765c42027571ce51c58f55fd1e4230",
+  "LEEME.txt": "106363387aaa2e11bb3615655521d51442929129e854da25a788ef12ac3d8a3c",
+  "requirements.txt": "38edb986b98d322db622e451d92d9aa69318653c820b8aebff359ca6ffe3cd23",
+  "resultados/01_nulos_antes.png": "2177dd2d2e838494f8f8095e8f821d6019485789c601c55b4a0953fe4cb6c105",
+  "resultados/02_mapa_nulos.png": "dd2943009194c8a4dcc64ed0a9a9960e213161ca5ba3b09ad03a9ed0615961e8",
+  "resultados/03_atipicos_boxplots.png": "a7c72f2c541037d16c485763c99e3f0f1bd7c66e2d743626308d08e6925ccc60",
+  "resultados/04_duracion_por_medio.png": "82bbd052e781cbd2891bb6d2e2b6c82c3aefccac20fca002bfaa884ea3708c4b",
+  "resultados/05_nulos_despues.png": "5d05f340762cb7728c83a0276f9f3ffe3809010c3a2250bd4089da8c06e6e266",
+  "resultados/06_estandarizacion.png": "158e49d3ebd3042a1988b6fadda7359d81e04fc465104a1bb2b2f212ba3b666f",
+  "resultados/07_correlaciones.png": "1b4426275f8f6b8db19171c83051d6fa09c0aef1700e4b70e4ca96ce1f071157",
+  "resultados/08_tamano_duracion.png": "72829df61ebfe71651b91029d6f014038feb60479ca429a8da1a00849f2e7aef",
+  "resultados/atipicos_iqr.csv": "110e5b2c9dd79f5c500ff57390636594cbade51ce5201b92af8086e961492555",
+  "resultados/diccionario_columnas.csv": "3319ec4403a5b81670cb3d2884108b89049d7dfbad0c6f213251b9d7698772c1",
+  "resultados/procedencia.json": "1ed822169316d0f4569511544bafcd4e15695513d873cc0c2a96650ee8fdc3fc",
+  "resultados/resumen_eda.json": "47dba26b5e74ad233ab507145190ba196eaa670f434f802878ca38cbd0f12845"
+}

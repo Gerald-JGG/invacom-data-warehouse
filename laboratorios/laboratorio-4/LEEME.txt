@@ -1,0 +1,44 @@
+LABORATORIO #4 - CHINOOK
+
+Abrir en Google Colab, Jupyter o VS Code con soporte de notebooks.
+Ejecutar las celdas de arriba hacia abajo. Instalar las dependencias de
+requirements.txt si el entorno no las tiene. La celda inicial muestra el comando.
+
+Se necesita Internet: las cinco tablas se descargan directamente de GitHub,
+desde un commit fijo del repositorio del proyecto.
+
+La guia solicita datos abiertos de Costa Rica. Gerald confirmo el 19/11/2026
+que el profesor autorizo utilizar Chinook. Esta excepcion se documenta al inicio.
+
+Archivos generados:
+- data_process.csv: catalogo procesado, banderas de calidad y predictores.
+- resultados/: ocho graficos PNG, resumen EDA, diccionario y limites IQR.
+- fuentes/: copias exactas de los cinco CSV descargados desde GitHub.
+
+Cobertura de la guia:
+1: Python en todas las celdas de codigo.
+2-3: lectura publica desde GitHub con procedencia y hashes.
+4: head, tail, sample, shape, info, describe y duplicados.
+5: encabezados en espanol y diccionario.
+6: conteos de nulos, barras y mapa de faltantes.
+7: funcion IQR, boxplots globales y por tipo de medio.
+8: funciones de imputacion de texto y numerica con justificacion.
+9: conversiones explicitas y unidades de minutos/MB.
+10: one-hot de genero y tipo de medio.
+11: log1p del tamano y StandardScaler ajustado en entrenamiento.
+12: Pearson, Spearman, mapas de calor y dispersion por tipo de medio.
+13: duracion_minutos como dependiente; arbol de regresion candidato.
+14: exportacion y relectura de data_process.csv con comprobaciones.
+15: los cuatro integrantes del documento del proyecto y Rachel Barquero Varela,
+agregada por indicacion de Gerald, estan en el encabezado.
+16: nombre exacto lab4_IC2025.ipynb y salidas incrustadas.
+
+No se entreno un modelo: la guia pide proponerlo y justificarlo.
+Los atipicos plausibles se conservan; no se inventan errores ni autores.
+Los IDs y duracion_ms no son predictores. Las columnas X se declaran en
+resultados/resumen_eda.json. Se conserva una particion por album para evitar
+mezclar pistas del mismo album entre entrenamiento y prueba.
+
+Este laboratorio usa solo el catalogo Chinook; no requiere RDS ni modifica AWS.
+Los archivos nuevos deben publicarse en GitHub para completar la entrega del
+repositorio. El profesor debe tener acceso si se cambia su visibilidad.

@@ -1,0 +1,157 @@
+{
+  "filas_originales": 3503,
+  "filas_procesadas": 3503,
+  "columnas_procesadas": 52,
+  "nulos_originales": 978,
+  "nulos_finales": 0,
+  "compositores_no_informados": 978,
+  "imputaciones_numericas": [
+    {
+      "variable": "tamano_bytes",
+      "valores_imputados": 0
+    },
+    {
+      "variable": "precio_unitario",
+      "valores_imputados": 0
+    }
+  ],
+  "atipicos_IQR": [
+    {
+      "variable": "duracion_ms",
+      "limite_inferior": 35735.0,
+      "limite_superior": 493191.0,
+      "IQR": 114364.0,
+      "atipicos": 357
+    },
+    {
+      "variable": "tamano_bytes",
+      "limite_inferior": 456230.75,
+      "limite_superior": 16153124.75,
+      "IQR": 3924223.5,
+      "atipicos": 343
+    },
+    {
+      "variable": "precio_unitario",
+      "limite_inferior": 0.99,
+      "limite_superior": 0.99,
+      "IQR": 0.0,
+      "atipicos": 213
+    }
+  ],
+  "objetivo": "duracion_minutos",
+  "columnas_X": [
+    "log_tamano_mb_z",
+    "precio_unitario_z",
+    "genero_Alternative",
+    "genero_Alternative & Punk",
+    "genero_Blues",
+    "genero_Bossa Nova",
+    "genero_Classical",
+    "genero_Comedy",
+    "genero_Drama",
+    "genero_Electronica/Dance",
+    "genero_Heavy Metal",
+    "genero_Hip Hop/Rap",
+    "genero_Jazz",
+    "genero_Latin",
+    "genero_Metal",
+    "genero_Opera",
+    "genero_Pop",
+    "genero_R&B/Soul",
+    "genero_Reggae",
+    "genero_Rock",
+    "genero_Rock And Roll",
+    "genero_Sci Fi & Fantasy",
+    "genero_Science Fiction",
+    "genero_Soundtrack",
+    "genero_TV Shows",
+    "genero_World",
+    "tipo_medio_AAC audio file",
+    "tipo_medio_MPEG audio file",
+    "tipo_medio_Protected AAC audio file",
+    "tipo_medio_Protected MPEG-4 video file",
+    "tipo_medio_Purchased AAC audio file"
+  ],
+  "filas_entrenamiento": 2690,
+  "filas_prueba": 813,
+  "ajuste_preprocesamiento": "solo entrenamiento; particion por album con semilla 42",
+  "categorias_entrenamiento": {
+    "genero": [
+      "Alternative",
+      "Alternative & Punk",
+      "Blues",
+      "Bossa Nova",
+      "Classical",
+      "Comedy",
+      "Drama",
+      "Electronica/Dance",
+      "Heavy Metal",
+      "Hip Hop/Rap",
+      "Jazz",
+      "Latin",
+      "Metal",
+      "Opera",
+      "Pop",
+      "R&B/Soul",
+      "Reggae",
+      "Rock",
+      "Rock And Roll",
+      "Sci Fi & Fantasy",
+      "Science Fiction",
+      "Soundtrack",
+      "TV Shows",
+      "World"
+    ],
+    "tipo_medio": [
+      "AAC audio file",
+      "MPEG audio file",
+      "Protected AAC audio file",
+      "Protected MPEG-4 video file",
+      "Purchased AAC audio file"
+    ]
+  },
+  "scaler_media": [
+    2.4353895906432164,
+    1.059888475836431
+  ],
+  "scaler_escala": [
+    1.06404028828662,
+    0.2549589707809705
+  ],
+  "pearson": {
+    "duracion_minutos": {
+      "duracion_minutos": 1.0,
+      "tamano_mb": 0.9601807783667968,
+      "precio_unitario": 0.9317964749112727
+    },
+    "tamano_mb": {
+      "duracion_minutos": 0.9601807783667968,
+      "tamano_mb": 1.0,
+      "precio_unitario": 0.9384817268476443
+    },
+    "precio_unitario": {
+      "duracion_minutos": 0.9317964749112727,
+      "tamano_mb": 0.9384817268476443,
+      "precio_unitario": 1.0
+    }
+  },
+  "spearman": {
+    "duracion_minutos": {
+      "duracion_minutos": 1.0,
+      "tamano_mb": 0.8795712122398122,
+      "precio_unitario": 0.40992060808464453
+    },
+    "tamano_mb": {
+      "duracion_minutos": 0.8795712122398122,
+      "tamano_mb": 1.0,
+      "precio_unitario": 0.41386143347943216
+    },
+    "precio_unitario": {
+      "duracion_minutos": 0.40992060808464453,
+      "tamano_mb": 0.41386143347943216,
+      "precio_unitario": 1.0
+    }
+  },
+  "sha256_data_process": "2daa84c1723c2c31303f6fcab886d920fd130f7c4fb150a4670090286f8251c8",
+  "autorizacion_chinook": "Confirmada por Gerald el 19/11/2026; no es dataset abierto de Costa Rica"
+}
